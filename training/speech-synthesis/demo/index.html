@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Speech Synthesis</title>
+
+    <style media="screen">
+      .talkingButton{
+        background-color: yellow;
+      }
+    </style>
+
+    <script type="text/javascript">
+      window.addEventListener('load', init);
+
+
+      function init(){
+        const myButton = document.querySelector('.talkingButton');
+        myButton.addEventListener('click', saySomething);
+
+      }
+
+      function saySomething(){
+        // alert("hi")
+
+        let u = new SpeechSynthesisUtterance('<speak>Howdy Partner</speak>');
+        window.speechSynthesis.speak(u);
+      }
+
+    </script>
+  </head>
+  <body>
+    <h1>Speech Synthesis</h1>
+      <button class="talkingButton">Say Something</button>
+
+      <button>Don't Say Nothin</button>
+  </body>
+</html>

@@ -2,11 +2,46 @@
 <html>
   <head>
     <title>User List</title>
+
+    <style media="screen">
+      table{
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      td{
+        border-bottom: 1px solid black;
+      }
+
+      th{
+        border-bottom: 1px solid black;
+      }
+
+    </style>
   </head>
 
   <body>
     <h1>User List</h1>
     [<a href="/">Logout</a>]
+
+    <table>
+      <tr>
+        <th>User</th>
+        <th>Role</th>
+      </tr>
+
+      <tr>
+        <td>Jane</td>
+        <td>Admin</td>
+      </tr>
+
+      <tr>
+        <td>John</td>
+        <td>User</td>
+      </tr>
+    </table>
   </body>
 
 </html>
